@@ -77,7 +77,7 @@ app.get('/get-token/:id', async (req, res) => {
   }
 });
 
-app.get('/get-parent-token/:id', async (req, res) => {
+app.get('/get-parent-token/:id', async (req, res) => { 
   const id = req.params.id;
   var user = await User.findOne({device_id:id});
   if(user){
