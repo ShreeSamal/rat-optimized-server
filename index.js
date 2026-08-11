@@ -73,7 +73,7 @@ app.get('/get-token/:id', async (req, res) => {
   if(user){
     res.json({"token":user.token});
   }else{
-    res.json({error:"user not found"});
+    res.json({error:"user not found yes"});
   }
 });
 
